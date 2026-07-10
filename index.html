@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Duck Genetics Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Duck Genetics Calculator</h1>
+<p>Breed prediction engine</p>
+</header>
+
+
+<section class="panel">
+
+<h2>Parent Genotypes</h2>
+
+<label>Drake genotype</label>
+
+<textarea id="male">
+M:M+/M+
+E:E/e
+Bl:Bl/bl+
+</textarea>
+
+
+<label>Duck genotype</label>
+
+<textarea id="female">
+M:M+/M+
+E:e/e
+Bl:bl+/bl+
+</textarea>
+
+
+<button id="calculate">
+Calculate Offspring
+</button>
+
+</section>
+
+
+<section class="panel">
+
+<h2>Results</h2>
+
+<div id="results">
+
+No calculation yet.
+
+</div>
+
+</section>
+
+
+<script src="js/genes.js"></script>
+<script src="js/genetics.js"></script>
+<script src="js/phenotypes.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quackery's Duck Genetics Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1>The Quackery's Duck Genetics Calculator</h1>
+      <p>Select both parents’ genotypes and calculate possible offspring.</p>
+    </header>
+
+    <div class="parents-grid">
+      <section class="panel">
+        <h2>Drake</h2>
+        <label for="maleM">Pattern</label>
+        <select id="maleM"><option value="M+/M+" selected>M+/M+</option><option value="MR/M+">MR/M+</option><option value="M+/Md">M+/Md</option><option value="MR/MR">MR/MR</option><option value="MR/Md">MR/Md</option><option value="Md/Md">Md/Md</option></select>
+        <label for="maleLi">Phase</label>
+        <select id="maleLi"><option value="Li+/Li+" selected>Li+/Li+</option><option value="Li+/li">Li+/li</option><option value="Li+/lih">Li+/lih</option><option value="li/li">li/li</option><option value="li/lih">li/lih</option><option value="lih/lih">lih/lih</option></select>
+        <label for="maleE">Extended Black</label>
+        <select id="maleE"><option value="e+/e+" selected>e+/e+</option><option value="E/e+">E/e+</option><option value="E/E">E/E</option></select>
+        <label for="maleBl">Blue</label>
+        <select id="maleBl"><option value="bl+/bl+" selected>bl+/bl+</option><option value="Bl/bl+">Bl/bl+</option><option value="Bl/Bl">Bl/Bl</option></select>
+        <label for="maleC">Recessive White</label>
+        <select id="maleC"><option value="C+/C+" selected>C+/C+</option><option value="C+/c">C+/c</option><option value="c/c">c/c</option></select>
+        <label for="maleR">Runner Pattern</label>
+        <select id="maleR"><option value="r+/r+" selected>r+/r+</option><option value="R/r+">R/r+</option><option value="R/R">R/R</option></select>
+        <label for="maleD">Chocolate</label>
+        <select id="maleD"><option value="D+/D+" selected>D+/D+</option><option value="D+/d">D+/d</option><option value="d/d">d/d</option></select>
+        <label for="maleBu">Buff</label>
+        <select id="maleBu"><option value="Bu+/Bu+" selected>Bu+/Bu+</option><option value="Bu+/bu">Bu+/bu</option><option value="bu/bu">bu/bu</option></select>
+      </section>
+
+      <section class="panel">
+        <h2>Duck</h2>
+        <label for="femaleM">Pattern</label>
+        <select id="femaleM"><option value="M+/M+" selected>M+/M+</option><option value="MR/M+">MR/M+</option><option value="M+/Md">M+/Md</option><option value="MR/MR">MR/MR</option><option value="MR/Md">MR/Md</option><option value="Md/Md">Md/Md</option></select>
+        <label for="femaleLi">Phase</label>
+        <select id="femaleLi"><option value="Li+/Li+" selected>Li+/Li+</option><option value="Li+/li">Li+/li</option><option value="Li+/lih">Li+/lih</option><option value="li/li">li/li</option><option value="li/lih">li/lih</option><option value="lih/lih">lih/lih</option></select>
+        <label for="femaleE">Extended Black</label>
+        <select id="femaleE"><option value="e+/e+" selected>e+/e+</option><option value="E/e+">E/e+</option><option value="E/E">E/E</option></select>
+        <label for="femaleBl">Blue</label>
+        <select id="femaleBl"><option value="bl+/bl+" selected>bl+/bl+</option><option value="Bl/bl+">Bl/bl+</option><option value="Bl/Bl">Bl/Bl</option></select>
+        <label for="femaleC">Recessive White</label>
+        <select id="femaleC"><option value="C+/C+" selected>C+/C+</option><option value="C+/c">C+/c</option><option value="c/c">c/c</option></select>
+        <label for="femaleR">Runner Pattern</label>
+        <select id="femaleR"><option value="r+/r+" selected>r+/r+</option><option value="R/r+">R/r+</option><option value="R/R">R/R</option></select>
+        <label for="femaleD">Chocolate</label>
+        <select id="femaleD"><option value="D+" selected>D+</option><option value="d">d</option></select>
+        <label for="femaleBu">Buff</label>
+        <select id="femaleBu"><option value="Bu+/Bu+" selected>Bu+/Bu+</option><option value="Bu+/bu">Bu+/bu</option><option value="bu/bu">bu/bu</option></select>
+      </section>
+    </div>
+
+    <div class="button-bar">
+      <button id="calculate" type="button">Calculate Offspring</button>
+      <button id="reset" type="button" class="secondary">Reset to Wild Type</button>
+    </div>
+
+    <section class="panel">
+      <h2>Results</h2>
+      <div id="results" aria-live="polite">No calculation yet.</div>
+    </section>
+  </main>
+
+  <script src="js/genes.js"></script>
+  <script src="js/genetics.js"></script>
+  <script src="js/phenotypes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
